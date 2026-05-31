@@ -400,7 +400,7 @@
 
     <div id="password-screen">
         <h2>စကားဝှက် ရိုက်ထည့်ပါ 🔐</h2>
-        <p class="hint">Hint: ကိုကိုတို့ချစ်သူဖြစ်တဲ့ရက်စွဲ<br>(ဂဏန်း၆လုံးထည့်ပါ)</p>
+        <p class="hint" style="font-weight: bold;">Hint: ကိုကိုတို့ချစ်သူဖြစ်တဲ့ရက်စွဲ<br>( ဂဏန်း ၆ လုံးထည့်ပါ )</p>
         <div id="password-display"></div>
 
         <div class="numpad">
@@ -460,7 +460,7 @@
         </div>
 
         <div class="card">
-            <div class="section-title">✨ Our Sweet Moments 💕</div>
+            <div class="section-title">✨ My Sweety Moments 💕</div>
             <div class="carousel-container">
                 <div class="carousel-track" id="carouselTrack">
                     <div class="carousel-slide">
@@ -597,7 +597,14 @@
         </div>
 
     </div>
-
+    <div id="surprise-popup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="box-icon">🎁</div>
+            <h2>Happy Birthday 🎂</h2>
+            <p>မွေးနေ့ရက်မြတ်မှာ ပျော်ရွှင်ပါစေ မီးငယ်...</p>
+            <button onclick="closeSurprise()">ကြည့်မည်</button>
+        </div>
+    </div>
     <script>
         let currentInput = "";
         const correctPassword = "231020";
@@ -694,6 +701,7 @@
             }, 3000); // 3 seconds interval
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="./js/javascript.js"></script>
 </body>
 
